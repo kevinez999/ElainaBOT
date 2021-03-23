@@ -205,7 +205,7 @@ module.exports = tobz = async (tobz, message) => {
 
         const serial = sender.id
         const isAdmin = adminNumber.includes(sender.id)
-        const ownerNumber = '6281311850715@c.us'
+        const ownerNumber = '6281390411978@c.us'
         const isOwner = ownerNumber.includes(sender.id)
 
         if (isGroupMsg && GroupLinkDetector && !isGroupAdmins && !isAdmin && !isOwner){
@@ -1240,7 +1240,7 @@ ${desc}`)
         case prefix+'resetsticker':
             if(isReg(obj)) return
             if(cekumur(cekage)) return
-            if (!isAdmin) return tobz.reply(from, `Maaf, perintah ini hanya dapat dilakukan oleh Admin Elaina!`, id)
+            if (!isAdmin) return tobz.reply(from, `Maaf, perintah ini hanya dapat dilakukan oleh Admin Bot!`, id)
             if (!args.length === 1) return tobz.reply(from, `Masukkan nomornya, *GUNAKAN AWALAN 62*\ncontoh: #resetsticker 62852262236155 / #resetsticker @member`, id) 
             const nomebr = args[1]
             let textz = nomebr.replace(/[-\s+@c.us]/g,'')
@@ -4089,7 +4089,7 @@ ${desc}`)
                 heho += '╠➥'
                 heho += ` @${groupMek[i].id.replace(/@c.us/g, '')}\n`
             }
-            heho += '╚═〘 ELAINA BOT 〙'
+            heho += '╚═〘 ALFABET BOT 〙'
             await sleep(2000)
             await tobz.sendTextWithMentions(from, heho)
             break
